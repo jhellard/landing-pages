@@ -1,0 +1,117 @@
+.footer {
+  background-color: $darkBlue;
+
+  &__wrapper {
+    height: 38rem;
+    text-align: center;
+    display: block;
+
+    @include breakpoint-up(large) {
+      display: flex;
+      text-align: left;
+      height: 11.875rem;
+    }
+  }
+
+  &__logo__image {
+    margin-top: 3.25rem;
+    margin-bottom: 2rem;
+    width: 11.8752rem;
+
+    @include breakpoint-up(large) {
+      width: 9rem;
+      margin-top: 2.875rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icons {
+    img {
+      width: 2rem;
+      margin: 0.5rem;
+      margin-bottom: 1.5rem;
+
+      @include breakpoint-up(large) {
+        width: 1.3rem;
+        margin-left: 0rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: white;
+      margin: 0.5rem;
+      margin-bottom: 0.875rem;
+    }
+
+    > a:last-child {
+      margin-bottom: 3.25rem;
+    }
+
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-wrap: wrap;
+      height: 7.5rem;
+      width: 25.625rem;
+      line-height: 0.8rem;
+      font-size: 0.875rem;
+      margin-top: 2.5rem;
+
+      > a:last-child {
+        margin-bottom: 0.875rem;
+      }
+    }
+  }
+
+  &__cta {
+    width: 13.75rem;
+    height: 3.3125rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    @include breakpoint-up(medium) {
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+      margin-top: 3.125rem;
+      margin-bottom: 1.37rem;
+    }
+  }
+
+  &__legal {
+    margin-top: 0;
+
+    @include breakpoint-up(medium) {
+      font-size: 1rem;
+    }
+  }
+
+  // This is a horrible solution, but it works.
+
+  &__flex1 {
+    @include breakpoint-up(medium) {
+      margin-right: 7.625rem;
+    }
+  }
+
+  &__flex2 {
+    @include breakpoint-up(medium) {
+      width: 31.5rem;
+      height: 190px;
+    }
+  }
+
+  &__flex3 {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 323px;
+    }
+  }
+}

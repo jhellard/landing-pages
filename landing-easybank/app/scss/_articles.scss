@@ -1,0 +1,96 @@
+.articles {
+
+  background-color: $veryLightGray;
+
+  &__intro {
+    margin-top: 4rem;
+    
+    h2 {
+      text-align: center;
+      font-weight: 400;
+
+      @include breakpoint-up(large) {
+        text-align: left;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    @include breakpoint-up(large){
+      justify-content: normal;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__content {
+    padding-top: 0.5rem;
+  }
+
+  &__item {
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 20rem;
+    max-height: 28rem;
+    @include breakpoint-up(medium){
+      max-width: 20rem;
+      max-height: 27rem;
+      margin: 0.5rem;
+    }
+    @include breakpoint-up(large){
+      max-width: 15.8125rem;
+      max-height: 26rem;
+      margin: 0;
+      margin-right: 2.03125rem;
+    }
+  }
+
+  &__image {
+    border-radius: 0.5rem 0.5rem 0 0;
+    max-height: 20rem;
+    max-width: 20rem;
+    @include breakpoint-up(medium){
+      width: 20rem;
+      height: 14rem;
+    }
+    @include breakpoint-up(large){
+      width: 15.8125rem;
+      height: 12.5rem;
+    }
+  }
+
+  &__author {
+    font-size: 0.625rem;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.65rem;
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    line-height: 1.125rem;
+    margin-top: 0;
+  }
+
+  &__content {
+    margin: 1rem;
+    margin-top: 0;
+    padding-bottom: 0;
+
+    @include breakpoint-up(large){
+      margin: 0;
+    }
+  }
+}
