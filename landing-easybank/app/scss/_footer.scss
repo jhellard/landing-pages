@@ -5,10 +5,18 @@
     height: 38rem;
     text-align: center;
     display: block;
+    
+    @include breakpoint-up(medium){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     @include breakpoint-up(large) {
       display: flex;
       text-align: left;
+      flex-direction: row;
+      align-items: normal;
       height: 11.875rem;
     }
   }
@@ -26,6 +34,10 @@
   }
 
   &__icons {
+    @include breakpoint-up(large) {
+      width: 10.0625rem;
+    }
+
     img {
       width: 2rem;
       margin: 0.5rem;
@@ -95,6 +107,9 @@
 
   &__flex1 {
     @include breakpoint-up(medium) {
+      margin-right: 0;
+    }
+    @include breakpoint-up(large) {
       margin-right: 7.625rem;
     }
   }
@@ -102,16 +117,20 @@
   &__flex2 {
     @include breakpoint-up(medium) {
       width: 31.5rem;
-      height: 190px;
+      height: 15rem;
+    }
+    @include breakpoint-up(large) {
+      height: 11.875rem;
     }
   }
 
   &__flex3 {
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(medium) {}
+    @include breakpoint-up(large) {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      width: 323px;
+      width: 20.1875rem;
     }
   }
 }
