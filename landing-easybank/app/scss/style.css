@@ -70,6 +70,50 @@
           animation: fadeOut 200ms ease-in-out forwards;
 }
 
+@-webkit-keyframes grow {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+}
+
+@keyframes grow {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+}
+
+@-webkit-keyframes shrink {
+  from {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes shrink {
+  from {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -629,6 +673,16 @@ button:hover, .button:hover {
   }
 }
 
+.articles__grid > div {
+  -webkit-animation: shrink 200ms ease-in-out forwards;
+          animation: shrink 200ms ease-in-out forwards;
+}
+
+.articles__grid > div:hover {
+  -webkit-animation: grow 200ms ease-in-out forwards;
+          animation: grow 200ms ease-in-out forwards;
+}
+
 .articles__content {
   padding-top: 0.5rem;
 }
@@ -636,6 +690,8 @@ button:hover, .button:hover {
 .articles__item {
   border-radius: 0.5rem;
   background-color: white;
+  -webkit-box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.35px 2.8px rgba(0, 0, 0, 0.048), 0 6.75px 5px rgba(0, 0, 0, 0.06), 0 11.15px 9.8px rgba(0, 0, 0, 0.072), 0 21px 16.5px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1.4px 1.1px rgba(0, 0, 0, 0.034), 0 3.35px 2.8px rgba(0, 0, 0, 0.048), 0 6.75px 5px rgba(0, 0, 0, 0.06), 0 11.15px 9.8px rgba(0, 0, 0, 0.072), 0 21px 16.5px rgba(0, 0, 0, 0.086), 0 50px 40px rgba(0, 0, 0, 0.12);
   margin: 1rem;
   margin-left: 0;
   margin-right: 0;

@@ -10,7 +10,6 @@
   // Hamburger Open Styles
 
   &.open {
-
     .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
@@ -77,7 +76,6 @@
       text-align: center;
       color: $darkBlue;
       padding: 0.625rem;
-
     }
   }
 
@@ -114,14 +112,4 @@
       }
     }
   }
-
-  // &__cta {
-  //   font-size: $font-sm;
-  //   color: $white;
-  //   transition: opacity 300ms ease-in-out;
-  // }
-
-  // &__cta:hover {
-  //   opacity: 0.8;
-  // }
 }

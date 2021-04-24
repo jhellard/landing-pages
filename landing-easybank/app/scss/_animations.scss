@@ -13,7 +13,7 @@
   }
   to {
     visibility: visible;
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -31,10 +31,28 @@
   }
   to {
     visibility: hidden;
-    opacity: 0
+    opacity: 0;
   }
 }
 
 .fade-out {
   animation: fadeOut 200ms ease-in-out forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.03);
+  }
+  to {
+    transform: scale(1);
+  }
 }
