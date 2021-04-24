@@ -103,9 +103,7 @@
     }
   }
 
-  // This is a horrible solution, but it works.
-
-  &__flex1 {
+  &__social {
     @include breakpoint-up(medium) {
       margin-right: 0;
     }
@@ -114,7 +112,7 @@
     }
   }
 
-  &__flex2 {
+  &__link_container {
     @include breakpoint-up(medium) {
       width: 31.5rem;
       height: 15rem;
@@ -124,7 +122,7 @@
     }
   }
 
-  &__flex3 {
+  &__cta_container {
     @include breakpoint-up(medium) {}
     @include breakpoint-up(large) {
       display: flex;

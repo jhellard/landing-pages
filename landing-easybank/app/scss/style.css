@@ -910,32 +910,32 @@ button:hover, .button:hover {
 }
 
 @media (min-width: 40em) {
-  .footer__flex1 {
+  .footer__social {
     margin-right: 0;
   }
 }
 
 @media (min-width: 70.625em) {
-  .footer__flex1 {
+  .footer__social {
     margin-right: 7.625rem;
   }
 }
 
 @media (min-width: 40em) {
-  .footer__flex2 {
+  .footer__link_container {
     width: 31.5rem;
     height: 15rem;
   }
 }
 
 @media (min-width: 70.625em) {
-  .footer__flex2 {
+  .footer__link_container {
     height: 11.875rem;
   }
 }
 
 @media (min-width: 70.625em) {
-  .footer__flex3 {
+  .footer__cta_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
