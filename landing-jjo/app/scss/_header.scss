@@ -1,0 +1,51 @@
+.header__container {
+  background-image: url(/images/hero-image.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 540px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8.75rem;
+
+  &__logo {
+    font-size: $font-lg;
+    font-weight: bold;
+    margin-right: auto;
+  }
+}
+
+.header__links {
+
+  a {
+    font-size: $font-md;
+    margin-right: 2.4375rem;
+  }
+}
+
+
+// Hero
+
+.hero {
+
+  &__text {
+    color: $white;
+    font-weight: 700;
+    font-size: $font-lg;
+    word-spacing: 0.2rem;
+  }
+
+  &__description {
+    color: $white;
+    font-size: $font-md;
+    margin-bottom: 2rem;
+  }
+
+  &__cta {
+    width: 13.75rem;
+    height: 3.25rem;
+  }
+}
