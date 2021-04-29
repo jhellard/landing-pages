@@ -11,7 +11,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
+}
 
+.wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 // Text
@@ -29,7 +34,8 @@ h1 {
 }
 
 h2 {
-  font-size: $font-md;
+  font-size: $font-lg;
+  font-weight: 700;
 }
 
 p {
@@ -52,7 +58,14 @@ button {
   border-radius: 0.2rem;
   font-size: $font-md;
   font-weight: bold;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
+
 
 // Spacing
 

@@ -1,0 +1,52 @@
+.cta {
+  
+  &__wrapper {
+    width: 102.5rem;
+    height: 20.3125rem;
+    border-radius: 0.3125rem;
+    background-image: url("/images/Newsletter-image.png");
+    background-color: #141414;
+  }
+
+  &__text__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  &__text, &__subscribe__text {
+    color: $white;
+  }
+
+  &__text {
+    margin-top: 4.6875rem;
+    margin-left: 4.375rem;
+    font-weight: 700;
+  }
+
+  &__subscribe__text {
+    margin-top: 0;
+    margin-left: 4.375rem;
+    margin-bottom: 1.5rem;
+    font-size: $font-md;
+    width: 37.5rem;
+  }
+
+  &__input {
+    width: 22.4375rem;
+    height: 2.75rem;
+    border-radius: 0.3125rem;
+    border: 0;
+    padding-left: 1.5rem;
+    margin-left: 4.375rem;
+  }
+
+  &__subscribe {
+    width: 9.1875rem;
+    height: 2.75rem;
+    font-size: 1rem;
+    border-radius: 0.3125rem;
+    margin-left: 1.5rem;
+  }
+
+}

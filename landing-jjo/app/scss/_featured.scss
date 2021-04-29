@@ -1,0 +1,60 @@
+.featured {
+
+  position: relative;
+  margin-bottom: 12rem;
+
+  &__header {
+    margin-bottom: 2.5rem;
+  }
+
+  &__companies {
+    display: flex;
+    position: absolute;
+
+    > div:last-of-type {
+      opacity: 0.5;
+    }
+  }
+
+  &__company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9.125rem;
+    height: 8.25rem;
+    margin-right: 2.75rem;
+  }
+
+  &__logo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 5.625rem;
+    height: 5.625rem;
+    margin-bottom: 0.875rem;
+  }
+
+  &__image {
+    width: 1.875rem;
+  }
+
+  &__name {
+    font-size: $font-job;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  &__button {
+    position: absolute;
+    border-radius: 50%;
+    height: 4.625rem;
+    width: 4.625rem;
+    top: 0.5625rem;
+    left: 87%;
+  }
+
+}
